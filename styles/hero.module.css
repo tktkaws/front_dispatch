@@ -1,0 +1,9 @@
+.text {
+}
+.title {
+  /* font-size: 6rem; */
+}
+.subtitle {
+  /* composes: title; */
+  /* color: red; */
+}
