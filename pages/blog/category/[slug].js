@@ -1,7 +1,7 @@
 import { getAllCategories, getAllPostsByCategory } from "lib/api";
 import Meta from "components/meta";
-
 import PostHeader from "components/post-header";
+import CategoryHeader from "components/category-header";
 import Posts from "components/posts";
 import { getPlaiceholder } from "plaiceholder";
 
@@ -12,7 +12,7 @@ export default function Category({ name, posts }) {
   return (
     <>
       <Meta pageTitle={name} pageDesc={`${name}に関する記事`} />
-      <PostHeader title={name} subtitle="Blog Category" />
+      <CategoryHeader title={name} subtitle="Blog Category" />
       <Posts posts={posts} />
     </>
   );
@@ -32,6 +32,7 @@ export async function getStaticProps(context) {
   const allCats = await getAllCategories();
   const cat = allCats.find(({ slug }) => slug === catSlug);
   const posts = await getAllPostsByCategory(cat.id);
+  console.log(posts);
 
   for (const post of posts) {
     if (!post.hasOwnProperty("eyecatch")) {

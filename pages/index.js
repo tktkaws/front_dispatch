@@ -21,16 +21,17 @@ export default function Home({ posts }) {
     <>
       <Meta />
 
-      <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn />
+      {/* <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn /> */}
 
       <Posts posts={posts} />
-      <Pagination nextUrl="/blog" nextText="More Posts" />
+
+      {/* <Pagination nextUrl="/blog" nextText="More Posts" /> */}
     </>
   );
 }
 
 export async function getStaticProps() {
-  const posts = await getAllPosts(2);
+  const posts = await getAllPosts();
 
   for (const post of posts) {
     if (!post.hasOwnProperty("eyecatch")) {
