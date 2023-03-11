@@ -7,12 +7,12 @@ export default function PostCategories({ categories }) {
   return (
     <div className={styles.flexContainer}>
       <h3 className={styles.heading}>
-        <FontAwesomeIcon icon={faFolderOpen} />
+        {/* <FontAwesomeIcon icon={faFolderOpen} /> */}
         <span className="sr-only">Categories</span>
       </h3>
       <ul className={styles.list}>
         {categories.map(({ name, slug }) => (
-          <li key={slug}>
+          <li key={slug} className={`${slug}`}>
             <Link href={`/blog/category/${slug}`}>
               <p>{name}</p>
             </Link>

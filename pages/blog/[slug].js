@@ -35,26 +35,17 @@ export default function Post({
       />
 
       <article>
-        <PostHeader title={title} subtitle="Blog Article" publish={publish} />
+        <PostHeader
+          title={title}
+          subtitle="Blog Article"
+          publish={publish}
+          eyecatch={eyecatch}
+        />
 
-        <figure>
-          <Image
-            key={eyecatch.url}
-            src={eyecatch.url}
-            alt=""
-            layout="responsive"
-            width={eyecatch.width}
-            height={eyecatch.height}
-            sizes="(min-width: 1152px) 1152px, 100vw"
-            priority
-            placeholder="blur"
-            blurDataURL={eyecatch.blurDataURL}
-          />
-        </figure>
         <PostBody>
           <ConvertBody contentHTML={content} />
         </PostBody>
-        <PostCategories categories={categories} />
+        {/* <PostCategories categories={categories} /> */}
         <Pagination
           prevText={prevPost.title}
           prevUrl={`/blog/${prevPost.slug}`}

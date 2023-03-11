@@ -13,7 +13,7 @@ export default function Pagination({
   nextUrl = "",
 }) {
   return (
-    <ul className={styles.flexContainer}>
+    <ul className={styles.center}>
       {prevText && prevUrl && (
         <li className={styles.prev}>
           <Link href={prevUrl}>

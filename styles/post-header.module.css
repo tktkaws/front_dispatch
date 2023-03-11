@@ -1,7 +1,11 @@
 .stack {
-  padding: var(--space-sm) 0;
+  padding: var(--space-sm) var(--space-xl);
+  /* position: relative; */
 }
-
+.stack figure {
+  position: relative;
+  height: 300px;
+}
 .stack > * + * {
   margin-top: var(--stack-space, 1em);
 }
@@ -13,6 +17,8 @@
 
 .title {
   --stack-space: 0.2em;
+  margin-top: var(--space-sm);
+  font-size: var(--post-heading);
 }
 
 .publish {

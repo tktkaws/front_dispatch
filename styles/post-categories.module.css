@@ -1,8 +1,8 @@
 .flexContainer {
-  display: flex;
+  /* display: flex;
   align-items: baseline;
   gap: 1.25rem;
-  color: var(--gray-50);
+  color: var(--gray-50); */
 }
 
 @media (min-width: 768px) {
@@ -16,7 +16,13 @@
 }
 
 .list {
-  composes: flexContainer;
-  font-size: var(--small-heading3);
+  display: flex;
+  font-size: var(--body);
   gap: 0.75rem;
 }
+
+/* .list li {
+  background-color: #e2d980;
+  color: white;
+  padding: 0.2em;
+} */
