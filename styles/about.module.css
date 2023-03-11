@@ -1,0 +1,22 @@
+.container {
+  padding: var(--space-sm) var(--space-xl);
+}
+
+.container > * + * {
+  margin-top: var(--stack-space, 1.5em);
+}
+
+.image {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 16/9;
+  /* height: 300px; */
+}
+
+.container a {
+  text-decoration: underline;
+}
+
+.url {
+  margin-left: 0.5em;
+}
