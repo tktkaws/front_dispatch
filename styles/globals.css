@@ -77,49 +77,15 @@ a {
   text-decoration: none;
 }
 html {
-  /* background: #F6EEBE url(../public/bg_noise01.png) repeat left top/64px 64px;
-  background-color: #7dbfc2;
-  background-color: #b0c0c6;
-  background-color: #e2d980;
-  background-color: #d9dfba;
-  background-color: #edede8;
-
-  background-color: #85D4E3;
-  background-color: #F4B5BD;
-  background-color: #FAD77B;
-  background-color: #F3DF6C;
-  background-color: #9C964A;
-
-  background-color: #D5E9ED;
-  background-color: #FCDFE3;
-  background-color: #F6EEBE;
-  background-color: #C1E0D0;
-
-
-  background: #F6EEBE url(../public/bg_noise01.png) repeat left top/64px 64px; */
+  background: #F6EEBE url(../public/bg_noise01.png) repeat left top/64px 64px;
 }
 body {
-  /* background-color: var(--main);
-  background-color: #7dbfc2;
-  background-color: #d9dfba;
-  background-color: white;
-  width: 100vh;
-  width: max(768px, 100vh);
-  width: 768px;
-  width: 1024px;
-  margin: 0 auto;
-  color: #4d534b;
-  min-height: 100vh; */
 }
 
 main {
   min-height: 70vh;
-  /* padding-bottom: 3rem; */
 }
-@media screen and (max-width: 1024px) {
-
+/* @media screen and (max-width: 1024px) {
 }
-
 @media screen and (max-width: 768px) {
-
-}
+} */
