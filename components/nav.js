@@ -17,7 +17,7 @@ export default function Nav() {
         </li>
         <li>
           <Link href="/blog/category/javascript">
-            <p>Java Script</p>
+            <p>JavaScript</p>
           </Link>
         </li>
         <li>

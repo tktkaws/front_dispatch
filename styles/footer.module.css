@@ -14,9 +14,3 @@
   margin-top: var(--space-jump);
   margin-bottom: var(--space-xs);
 }
-
-@media screen and (max-width: 768px) {
-  .footer {
-    background: #edede8 url(../public/bg_noise01.png) repeat left top/64px 64px;
-  }
-}
