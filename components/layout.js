@@ -7,28 +7,31 @@ export default function Layout({ children }) {
   let backgroundColor;
 
   if (children.props.name === "HTML") {
-    backgroundColor = "#F6EEBE";
+    backgroundColor = "#C1E0D0";
   } else if (children.props.name === "CSS") {
     backgroundColor = "#FCDFE3";
   } else if (children.props.name === "JavaScript") {
-    backgroundColor = "#C1E0D0";
+    backgroundColor = "#F6EEBE";
   } else {
     backgroundColor = "#D5E9ED";
   }
   if (children.props.categories) {
     if (children.props.categories[0].name === "HTML") {
-      backgroundColor = "#F6EEBE";
+      backgroundColor = "#C1E0D0";
     } else if (children.props.categories[0].name === "CSS") {
       backgroundColor = "#FCDFE3";
     } else if (children.props.categories[0].name === "JavaScript") {
-      backgroundColor = "#C1E0D0";
+      backgroundColor = "#F6EEBE";
     } else {
       backgroundColor = "#D5E9ED";
     }
   }
   const style = {
+    backgroundImage: "url('/bg_noise01.png')",
+    backgroundRepeat: "repeat",
+    backgroundSize: "64px 64px",
+    backgroundPosition: "left top",
     backgroundColor: backgroundColor,
-    position: "absolute",
     width: "100%",
   };
   return (
