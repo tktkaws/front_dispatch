@@ -30,3 +30,12 @@
   border: solid 1px #edede8;
   padding: 1rem;
 }
+
+.stack blockquote {
+  border-left: 4px solid #d6dde3;
+  padding: 1em 1.5em;
+}
+
+.stack h2 {
+  border-bottom: 1px solid #d6dde3;
+}
