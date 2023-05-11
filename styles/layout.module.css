@@ -1,5 +1,6 @@
 .container {
   width: 1024px;
+  width: calc(1024px * 0.96);
   margin: 0 auto;
   color: #4d534b;
   min-height: 100vh;
@@ -8,7 +9,7 @@
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: 90%;
+    width: 96%;
   }
 }
 
