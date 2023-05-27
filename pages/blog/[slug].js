@@ -10,6 +10,8 @@ import PostBody from "components/post-body";
 import PostCategories from "components/post-categories";
 import { getPlaiceholder } from "plaiceholder";
 import Pagination from "components/pagination";
+import { renderToc } from "lib/render-toc";
+import { TableOfContents } from "components/contents-table";
 
 import Hero from "components/hero";
 import Meta from "components/meta";
@@ -24,6 +26,8 @@ export default function Post({
   prevPost,
   nextPost,
 }) {
+  const toc = renderToc(content);
+  console.log(toc);
   return (
     <>
       <Meta
@@ -41,6 +45,7 @@ export default function Post({
           publish={publish}
           eyecatch={eyecatch}
         />
+        <TableOfContents toc={toc} />
 
         <PostBody>
           <ConvertBody contentHTML={content} />

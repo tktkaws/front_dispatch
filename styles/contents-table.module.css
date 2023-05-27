@@ -1,0 +1,13 @@
+.stack {
+    margin: var(--space-sm) var(--space-xl);
+  }
+  .heading {
+    font-weight: bold;
+  }
+  .item {
+    margin-top: var(--stack-space, 1em);
+    border-bottom: 1px solid #d6dde3;
+  }
+  /* .stack > * + * {
+    margin-top: var(--stack-space, 1em);
+  } */
