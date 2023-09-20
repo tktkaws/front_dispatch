@@ -2,7 +2,7 @@
   padding: var(--space-sm) var(--space-xl);
 }
 
-.stack > * + * {
+.stack > div > * + * {
   margin-top: var(--stack-space, 1.5em);
 }
 
@@ -26,16 +26,17 @@
 }
 
 .stack pre {
-  /* background-color: #edede8; */
-  border: solid 1px #edede8;
-  padding: 1rem;
 }
 
 .stack blockquote {
   border-left: 4px solid #d6dde3;
-  padding: 1em 1.5em;
+  padding: 1em;
 }
 
 .stack h2 {
   border-bottom: 1px solid #d6dde3;
+}
+
+.stack a {
+  text-decoration: underline;
 }
