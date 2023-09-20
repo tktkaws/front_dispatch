@@ -1,10 +1,12 @@
 .grid {
   padding: var(--space-sm) var(--space-xl);
+  padding-bottom: 0;
   display: grid;
   /* grid-template-columns: 1fr 1fr; */
   /* grid-template-rows: 1fr 1fr; */
   gap: 1em;
-  margin-top: var(--space-xl);
+  /* margin-top: var(--space-md); */
+
 }
 /* .image {
   grid-column: 1;
@@ -36,6 +38,7 @@
   margin-top: var(--space-xs);
   font-size: var(--post-heading);
   grid-row: 1;
+  text-align: center;
 }
 
 .publish {
@@ -44,4 +47,5 @@
   color: var(--gray-50);
   font-size: var(--small-heading3);
   grid-row: 2;
+  justify-self: center;
 }

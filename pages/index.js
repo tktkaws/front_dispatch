@@ -15,6 +15,7 @@ import { getPlaiceholder } from "plaiceholder";
 
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants";
+import Nav from "@/components/nav";
 
 export default function Home({ posts }) {
   return (
@@ -22,6 +23,7 @@ export default function Home({ posts }) {
       <Meta />
 
       {/* <Hero title="CUBE" subtitle="アウトプットしていくサイト" imageOn /> */}
+      <Nav />
 
       <Posts posts={posts} />
 
