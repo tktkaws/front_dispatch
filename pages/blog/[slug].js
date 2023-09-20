@@ -16,6 +16,12 @@ import { TableOfContents } from "components/contents-table";
 import Hero from "components/hero";
 import Meta from "components/meta";
 
+// import cheerio from "cheerio";
+import * as cheerio from "cheerio";
+import hljs from "highlight.js";
+// import "highlight.js/styles/night-owl.css";
+import "highlight.js/styles/a11y-dark.css";
+
 export default function Post({
   title,
   content,
@@ -48,7 +54,10 @@ export default function Post({
         <TableOfContents toc={toc} />
 
         <PostBody>
-          <ConvertBody contentHTML={content} />
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
+          {/* <div dangerouslySetInnerHTML={{ __html: highlightedBody }}></div> */}
+
+          {/* <ConvertBody contentHTML={content} /> */}
         </PostBody>
         {/* <PostCategories categories={categories} /> */}
         <Pagination
@@ -87,10 +96,21 @@ export async function getStaticProps(context) {
   const allSlugs = await getAllSlugs();
   const [prevPost, nextPost] = prevNextPost(allSlugs, slug);
 
+  const $ = cheerio.load(post.content);
+
+  $("pre code").each((_, elm) => {
+    const result = hljs.highlightAuto($(elm).text());
+    $(elm).html(result.value);
+    $(elm).addClass("hljs");
+  });
+
+  const highlightedBody = $.html();
+
   return {
     props: {
       title: post.title,
-      content: post.content,
+      // content: post.content,
+      content: highlightedBody,
       publish: post.publishedAt,
       eyecatch: eyecatch,
       categories: post.categories,
