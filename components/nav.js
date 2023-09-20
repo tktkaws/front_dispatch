@@ -21,8 +21,28 @@ export default function Nav() {
           </Link>
         </li>
         <li>
+          <Link href="/blog/category/webgl">
+            <p>WebGL</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/category/astro">
+            <p>Astro</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/category/a11y">
+            <p>Accessibility</p>
+          </Link>
+        </li>
+        <li>
           <Link href="/blog/category/other">
             <p>Other</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog/category/private">
+            <p>Private</p>
           </Link>
         </li>
       </ul>

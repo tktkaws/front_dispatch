@@ -4,10 +4,16 @@
 }
 
 .list {
-  margin-top: var(--space-md);
+  margin-top: var(--space-xs);
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   /* gap: var(--space-jump); */
   justify-content: space-around;
   /* text-transform: uppercase; */
+}
+.list li {
+  width: 120px;
+  text-align: center;
+  margin-top: 1em;
 }

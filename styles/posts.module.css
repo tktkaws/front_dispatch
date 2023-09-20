@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-columns: 1fr;
   gap: var(--space-jump);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
   margin-bottom: var(--space-lg);
   margin-left: var(--space-jump);
   margin-right: var(--space-jump);
