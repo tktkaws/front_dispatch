@@ -23,32 +23,12 @@
   height: 5rem;
   width: 100%;
   height: 100%;
-  background-color: #edede8;
-  opacity: 0.8;
-  background-image: linear-gradient(135deg, #7dbfc2 25%, transparent 25%),
-    linear-gradient(225deg, #7dbfc2 25%, transparent 25%),
-    linear-gradient(45deg, #7dbfc2 25%, transparent 25%),
-    linear-gradient(315deg, #7dbfc2 25%, #edede8 25%);
-  background-position: 10px 0, 10px 0, 0 0, 0 0;
-  background-size: 20px 20px;
-  background-repeat: repeat;
 }
 
 .gridContainer figure:nth-of-type(2) {
   width: 10vw;
   height: 19vw;
-  background-color: #ffffff;
   opacity: 0.8;
-  background-image: radial-gradient(circle at center center, #7dbfc2, #ffffff),
-    repeating-radial-gradient(
-      circle at center center,
-      #7dbfc2,
-      #7dbfc2,
-      4px,
-      transparent 8px,
-      transparent 4px
-    );
-  background-blend-mode: multiply;
 }
 
 .post {
