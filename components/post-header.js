@@ -12,26 +12,21 @@ export default function PostHeader({
   publish = "",
 }) {
   return (
-    <div className={styles.stack}>
+    <div className={styles.grid}>
       {/* <p className={styles.subtitle}>{subtitle}</p> */}
 
-      <figure>
+      {/* <figure className={styles.image}>
         <Image
           key={eyecatch.url}
           src={eyecatch.url}
           alt=""
-          layout="fill"
-          objectFit="cover"
-          // width={eyecatch.width}
-          // height={eyecatch.height}
-          // width="800"
-          // height="400"
-          sizes="(min-width: 800px) 800px, 80vw"
+          width="150"
+          height="150"
           priority
           placeholder="blur"
           blurDataURL={eyecatch.blurDataURL}
         />
-      </figure>
+      </figure> */}
       <h1 className={styles.title}>{title}</h1>
 
       {publish && (
