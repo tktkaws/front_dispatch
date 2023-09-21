@@ -7,11 +7,13 @@ import { getPlaiceholder } from "plaiceholder";
 
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from "lib/constants";
+import Nav from "@/components/nav";
 
 export default function Category({ name, posts }) {
   return (
     <>
       <Meta pageTitle={name} pageDesc={`${name}に関する記事`} />
+      <Nav />
       <CategoryHeader title={name} subtitle="Blog Category" />
       <Posts posts={posts} />
     </>
