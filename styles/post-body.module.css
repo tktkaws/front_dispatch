@@ -40,3 +40,7 @@
 .stack a {
   text-decoration: underline;
 }
+
+.stack img {
+  width: 100%;
+}
