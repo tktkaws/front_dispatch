@@ -1,4 +1,3 @@
-// import { client } from "lib/api";
 import { getPostBySlug, getAllSlugs } from "lib/api";
 import { extractText } from "lib/extract-text";
 import { prevNextPost } from "lib/prev-next-post";
@@ -16,10 +15,8 @@ import { TableOfContents } from "components/contents-table";
 import Hero from "components/hero";
 import Meta from "components/meta";
 
-// import cheerio from "cheerio";
 import * as cheerio from "cheerio";
 import hljs from "highlight.js";
-// import "highlight.js/styles/night-owl.css";
 import "highlight.js/styles/a11y-dark.css";
 
 export default function Post({
