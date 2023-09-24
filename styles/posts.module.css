@@ -14,6 +14,12 @@
     margin-inline: var(--space-xl);
   }
 }
+@media screen and (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    margin-inline: 5%;
+  }
+}
 
 .post {
   display: grid;
@@ -35,7 +41,6 @@
   margin-top: 0.3em;
   font-size: var(--small-heading3);
   font-size: var(--heading3);
-
   font-weight: bold;
 }
 
