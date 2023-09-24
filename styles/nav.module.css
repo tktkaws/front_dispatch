@@ -1,19 +1,28 @@
 .nav {
   width: 100%;
-  padding-inline: 22%;
+  display: flex;
+  justify-content: center;
 }
 
 .list {
   margin-top: var(--space-xs);
   width: 100%;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
-  /* gap: var(--space-jump); */
   justify-content: space-around;
-  /* text-transform: uppercase; */
 }
 .list li {
   width: 120px;
   text-align: center;
   margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    width: 100%;
+  }
+  .list li {
+    width: 50%;
+  }
 }
